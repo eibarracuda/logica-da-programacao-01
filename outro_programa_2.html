@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+    } //nomes são importantes, nome de função sempre verbo 
+    function mostra(isto){
+        document.write(isto);
+        pulaLinha();
+    }
+    var ano = 2023;
+    var puloLinha = "<br>"
+    var idadeFlavio = (ano - 1977);
+    var idadeJoaquim = (ano - 1996);
+    var idadeBarney = (ano - 1976);
+    var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+
+
+    mostra("Flávio tem " + idadeFlavio + " anos");
+    mostra("Joaquim tem " + idadeJoaquim + " anos");
+    mostra("Barney tem " + idadeBarney + " anos");
+    pulaLinha();
+    mostra( "A média das idades é " + Math.round(media));
+</script>

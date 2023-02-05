@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+   
+    var numeroPensado = Math.round(Math.random() * 10);
+    alert ("Pensei num numero, vamos brincar?")
+    var tentativas = 1;
+    var chute = parseInt(prompt("De 0 a 10, qual você acha que é?"));   
+
+    while(tentativas <= 3){
+
+        if (chute == numeroPensado){
+            alert("Você acertou!");
+            break;
+        }
+        if (chute > numeroPensado) {
+            alert("Ops, o numero que eu pensei era menor que isso!");
+        } else {
+            alert("O numero que eu pensei era maior! :(");
+        }
+        tentativas++;
+       if (tentativas <= 3){
+        chute = parseInt(prompt( tentativas + " chance, qual você acha que é?"));
+        }
+    }
+
+
+    if (chute == numeroPensado){
+        alert("Realmente, tinha pensado no numero " + numeroPensado + ". Dê f5 para testar a sorte novamente ;)");
+    } else {
+            alert("Acabaram suas chances... O numero pensado era " + numeroPensado + ". Dê f5 para testar a sorte novamente ;)") 
+        } 
+
+
+
+
+</script>
